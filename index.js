@@ -1,6 +1,6 @@
 var express = require('express');
 var app = new express();
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 app.listen(port, function(err) {
     if (typeof(err) == "undefined") {
