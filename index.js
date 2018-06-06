@@ -8,8 +8,7 @@ var users = [{
   },{
     name : "Manju",
     Address : "Banshankari"
-  }
-}];
+  }];
 
 app.listen(port, function(err) {
     if (typeof(err) == "undefined") {
@@ -23,6 +22,6 @@ app.get('/', function(req, res) {
     res.sendFile('index.html', { root: __dirname });
 });
 
-app.get('/users', function(res. req) {
+app.get('/users', function(req, res) {
     res.send(JSON.stringify(users));
 });
