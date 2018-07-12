@@ -8,13 +8,27 @@
     console.log(MainControllerView);
     getRequest('/view/addItem.html', function (response) {
         console.log(response);
-        MainControllerView.innerHTML += response;
+        MainControllerView.innerHTML = response;
     });
+
+    var ate = getMappings();
 }("ExpApp"));
 
 function getView(view, model) {
     getRequest(view, function (response) {
         return response;
+    });
+}
+
+function getMappings() {
+    getRequest("/js/mappings.js", function (response) {
+        return response;
+    });
+}
+
+function getController(controllerName) {
+    getRequest(controllerName, function (controller) {
+        return controller;
     });
 }
 

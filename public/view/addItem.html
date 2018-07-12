@@ -1,14 +1,25 @@
+<link href="./css/addItem.css" rel="stylesheet" />
 <section data-controller="AddItemController" class="addItem-container">
     <form id="addItem">
-        <label for="dateFeild">Date</label>
-        <input type="text" id="dateFeild" />
-        <label for="particularFeild">Date</label>
-        <input type="text" id="particularFeild" />
-        <label for="valueFeild">Date</label>
-        <input type="text" id="valueFeild" />
-        <label for="remarkFeild">Date</label>
-        <input type="text" id="remarkFeild" />
-        <a href="javascript:void(0);">Clear</a>
-        <button>Add</button>
+        <div class="input-box">
+            <label for="dateFeild">Date</label>
+            <input type="text" id="dateFeild" />
+        </div>
+        <div class="input-box">
+            <label for="particularFeild">Particular</label>
+            <input type="text" id="particularFeild" />
+        </div>
+        <div class="input-box">
+            <label for="valueFeild">Value</label>
+            <input type="text" id="valueFeild" />
+        </div>
+        <div class="input-box">
+            <label for="remarkFeild">Remark</label>
+            <input type="text" id="remarkFeild" />
+        </div>
+        <div class="button-wrap">
+            <a href="javascript:void(0);">Clear</a>
+            <button>Add</button>
+        </div>
     </form>
 </section>
